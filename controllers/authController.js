@@ -25,7 +25,7 @@ const sendVerificationEmail = (company, token) => {
         from: 'noreply@yourdomain.com',
         to: company.email,
         subject: 'Verify your email address',
-        html: `<p>Click the following link to verify your email address: <a href="http://localhost:5000/api/auth/verify-email/${token}">Verify Email</a></p>`
+        html: `<p>Click the following link to verify your email address: <a href="https://my-backend-app-ktus.onrender.com/api/auth/verify-email/${token}">Verify Email</a></p>`
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
