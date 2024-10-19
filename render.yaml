@@ -1,0 +1,9 @@
+version: 1
+services:
+  - type: web
+    name: my-backend-app # Name your service
+    env: node # Specify the environment (node, python, etc.)
+    buildCommand: npm install # Command to install dependencies
+    startCommand: npm start # Command to start your app
+    autoDeploy: true # Automatically deploy on every push
+    plan: free # Choose the plan (free or paid)
